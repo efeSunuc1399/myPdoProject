@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-<form action="" method="post">
-<script>src="scripts/bootstrap.min.js"</script>
-</form>
+    <form action="" method="post">
+    </form>
+    <script src="scripts/bootstrap.min.js"></script>
 </body>
 </html>

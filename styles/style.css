@@ -1,0 +1,32 @@
+html{
+    background-color: #ced4da;
+    padding: 5% 10%;
+}
+
+body{
+    position: relative;
+
+    border-radius: 15px;
+    padding: 5% 10%;
+    background-color: #1864ab;
+    max-width: 1200px;
+}
+
+.floating-header{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Utility classes */
+.bg-gray, .btn-gray{
+    background-color: #ced4da;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.vh-60{
+    height: 60vh;
+}
+

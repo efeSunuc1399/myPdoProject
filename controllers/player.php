@@ -6,7 +6,7 @@ class Players{
     public function index(){
         $selectDatas = [
             'getSinglePlayer' => "Get Single Player",
-            'getAllPlayers' => "Get All Player",
+            'getAllPlayers' => "Get All Players",
             'getTop3' => "Get Top 3"
         ];
 

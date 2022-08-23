@@ -1,10 +1,10 @@
 <?php
 require_once "controllers/player.php";
+include_once "helperFuncs.php";
 $mySession = new Players();
 $inputSelectDatas = $mySession->index();
-echo "<pre>";
-print_r($inputSelectDatas);
-exit;
+//printPretty($inputSelectDatas);
+//exit;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,15 +22,14 @@ exit;
     <form>
         <div class="row gx-5">
             <div class="col-6">
-                <select name="request" class="form-control bg-gray ">
-                    <option>Default select</option>
-                    <option>Default select</option>
-                    <option>Default select</option>
-                    <option>Default select</option>
+                <select name="choice" id="choice" class="form-select bg-gray">
+                    <?php foreach($inputSelectDatas as $key=>$value){ ?>
+                    <option value="<?php echo $key ?>"><?php echo $value ?></option>
+                    <?php } ?>
                 </select>
             </div>
             <div class="col-6 ">
-                <input type="text" class="form-control bg-gray">
+                <input type="text" class="form-control bg-gray" id="getPlayerByName" placeholder="Please enter player's name">
             </div>
             <input type="submit" class="btn btn-gray col-3 mt-4 mx-auto">
         </div>

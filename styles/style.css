@@ -1,32 +1,44 @@
-html{
-    background-color: #ced4da;
-    padding: 5% 10%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+html, body{
+    background-color: #adb5bd;
+    height: 100%;
     position: relative;
-
-    border-radius: 15px;
-    padding: 5% 10%;
-    background-color: #1864ab;
-    max-width: 1200px;
 }
 
-.floating-header{
+/*<editor-fold desc="index page style">*/
+
+.pick-game-container{
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
 }
 
-/* Utility classes */
-.bg-gray, .btn-gray{
-    background-color: #ced4da;
-    font-size: 18px;
-    font-weight: 400;
+.pick-game-name{
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    padding: 48px 36px;
+    transition: transform 315ms;
+    cursor: pointer;
 }
 
-.vh-60{
-    height: 60vh;
+.pick-game-name:hover{
+    transform: scale(1.09);
 }
 
+.pick-game-name-1{
+    color: #ffc078;
+    background-color: red;
+}
+
+.pick-game-name-2{
+    color: #c5f6fa;
+    background-color: #1c7ed6;
+}
+/* </editor-fold> */
